@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+<style>
+body {
+
+  background: linear-gradient(90deg, #61D6C4 60%, #148F77  60%), #148F77 ;
+}
+</style>
+</head>
+<body>
+
+  <div>
+     <div class="wave"></div>
+     <div class="wave"></div>
+     <div class="wave"></div>
+
+
+<nav>
+<div class="topnav" id="myTopnav">
+  <a style="color:black;" class="active" href="/">HOME</a>
+  <a href="/login">Login</a>
+  <a href="/register">Register</a>
+  <div class="dropdown">
+    <a class="dropbtn">BRANCHES
+        <i class="fa fa-caret-down"></i></a><br><br>
+    <div class="dropdown-content">
+        <a href="https://en.wikipedia.org/wiki/Alappuzha">Alappuzha</a>
+        <a href="https://en.wikipedia.org/wiki/Ernakulam">Ernakulam</a>
+        <a href="https://en.wikipedia.org/wiki/Idukki">Idukki</a>
+        <a href="https://en.wikipedia.org/wiki/Kannur">Kannur</a>
+        <a href="https://en.wikipedia.org/wiki/Kasaragod">Kasaragod</a>
+        <a href="https://en.wikipedia.org/wiki/Kollam">Kollam</a>
+        <a href="https://en.wikipedia.org/wiki/Kottayam">Kottayam</a>
+        <a href="https://en.wikipedia.org/wiki/Kozhikode">Kozhikode</a>
+        <a href="https://en.wikipedia.org/wiki/Malappuram">Malappuram</a>
+        <a href="https://en.wikipedia.org/wiki/Palakkad">Palakkad</a>
+        <a href="https://en.wikipedia.org/wiki/Pathanamthitta">Pathanamthitta</a>
+        <a href="https://en.wikipedia.org/wiki/Thiruvananthapuram">Thiruvananthapuram</a>
+        <a href="https://en.wikipedia.org/wiki/Thrissur">Thrissur</a>
+        <a href="https://en.wikipedia.org/wiki/Wayanad">Wayanad</a>
+    </div>
+  </div>
+</div>
+</nav>
+<br>
+
+<center>
+
+
+ <link rel="stylesheet" href="{% static 'nu.css' %}">
+
+
+<button style="background-color:white;"><a href="{% url 'login' %}">THE BANK</a></button>
+
+</center>
+  </div>
+</body>
+</html>

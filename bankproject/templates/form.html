@@ -1,0 +1,60 @@
+
+<html>
+  <head>
+    <title>Bank Account Form</title>
+  </head>
+  <body>
+   {% load static %}
+  <link rel="stylesheet"  href="/static/background.css">
+  <link rel="stylesheet" href="/static/frm.css">
+   <div class="form">
+    <form action="" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+        <center><label class="subtitle"> Form</label></center><br>
+      <input class="input" type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+      <input class="input" type="date" id="dob" name="dob" placeholder="Enter your DOB"><br><br>
+
+      <input class="input" type="number" id="age" name="age" placeholder="Enter your Age"><br><br>
+      <label  style="color: #eee;" class="subtitle" for="gender">Gender:</label>
+        <input  type="radio" id="gender" name="gender" value="male"><a style="color:#eee;">Male</a>
+      <input  type="radio" id="gender" name="gender" value="female"><a style="color:#eee;">female</a><br><br>
+
+      <input class="input" type="text" id="phone" name="phone" placeholder="Enter your number"><br><br>
+
+      <input class="input" type="email" id="email" name="email" placeholder="Enter your email"><br>
+      <label class="subtitle" for="address">Address:</label><br>
+
+      <textarea style="height: 12%;" class="input" id="address" name="address" placeholder="Enter your address"></textarea><br><br>
+     {% load static %}
+     <script src="{% static 'x.js' %}"></script>
+        <label class="subtitle" for="district">District:</label>
+        <select name="district" id="district">
+    <option value="" selected="selected">Select district</option>
+  </select>
+
+        <label class="subtitle" for="branch"> Branch: </label>
+       <select name="branch" id="branch">
+    <option  value="" selected="selected">Select branch</option>
+  </select><br><br>
+      <label class="subtitle" for="account">Account Type:</label>
+      <select id="account" name="account">
+        <option value="savings">Savings Account</option>
+        <option value="current">Current Account</option>
+      </select><br><br>
+      <label class="subtitle" for="materials">Materials Provided:</label><br>
+      <input type="checkbox" id="materials" name="materials" value="debit card"><a style="color:#eee;">Debit Card<br>
+      <input type="checkbox" id="materials" name="materials" value="credit card"><a style="color:#eee;">Credit Card<br>
+      <input type="checkbox" id="materials" name="materials" value="cheque book"><a style="color:#eee;">Cheque Book<br>
+                <input class="submit" type="submit" value="Submit">
+                <a href="{% url 'logout' %}">
+<input style="background-color:red;" class="submit" type="button" value="Logout" >
+</a>
+
+</form>
+   </div>
+
+</body>
+
+</html>
+

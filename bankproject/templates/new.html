@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>form redirect</title>
+<style>
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+
+}</style>
+
+</head>
+<body>
+ {% load static %}
+  <link rel="stylesheet"  href="/static/background.css">
+
+
+ <link rel="stylesheet"  href="/static/nu.css">
+
+
+
+     <div class="center">
+
+<button type="button" style="background-color:white;"><a href="{% url 'form' %}">FORM</a></button>
+
+     </div>
+
+</body>
+</html>
